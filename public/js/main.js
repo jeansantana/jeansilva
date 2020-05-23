@@ -185,17 +185,17 @@
     }
 
     //On Window load & Resize
-    $(window)
-        .on('load', function() { //Load
-            // Animation on Page Loading
-            $(".preloader").fadeOut( 800, "linear" );
-            animateLayout();
-        })
-        .on('hashchange', function(event) {
-            if(location.hash) {
-                ajaxLoader();
-            }
-        });
+    // $(window)
+    //     .on('load', function() { //Load
+    //         // Animation on Page Loading
+    //         $(".preloader").fadeOut( 800, "linear" );
+    //         // animateLayout();
+    //     })
+    //     .on('hashchange', function(event) {
+    //         if(location.hash) {
+    //             ajaxLoader();
+    //         }
+    //     });
 
 
     // On Document Load
@@ -424,12 +424,12 @@
         });
         
         //Google Maps
-        $("#map").googleMap({
-            zoom: 16 // Google Map ZOOM. You can change this value
-        });
-        $("#map").addMarker({
-            address: "S601 Townsend Street, San Francisco, California, USA", // Your Address. Change it
-        });
+        // $("#map").googleMap({
+        //     zoom: 16 // Google Map ZOOM. You can change this value
+        // });
+        // $("#map").addMarker({
+        //     address: "S601 Townsend Street, San Francisco, California, USA", // Your Address. Change it
+        // });
 
         scrollTop();
 

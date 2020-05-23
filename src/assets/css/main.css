@@ -1698,6 +1698,7 @@ h3.comment-reply-title:before {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-image: url(../img/jeansilva.jpg);
     height: auto;
     display: block;
     position: absolute;

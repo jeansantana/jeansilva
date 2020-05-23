@@ -32,35 +32,66 @@
             <!-- /Text Logo -->
 
             <!-- Navigation -->
-            <MainMenu/>
+            <main-menu/>
             <!-- Navigation -->
-
-            <!-- Mobile Menu Toggle -->
-            <a class="menu-toggle mobile-visible">
-              <i class="fa fa-bars"></i>
-            </a>
-            <!-- Mobile Menu Toggle -->
           </div>
         </header>
         <!-- /Header -->
 
+        <!-- Content -->
         <div id="main" class="site-main">
           <div id="main-content" class="single-page-content">
-            heuh
+            <div id="primary" class="content-area">
+              <slot></slot>
+            </div>
           </div>
         </div>
+        <!-- Content -->
+
+        <!-- Footer -->
+        <footer class="site-footer clearfix">
+          <div class="footer-social">
+            <ul class="footer-social-links">
+              <li>
+                <a href="#" target="_blank">Linkedin</a>
+              </li>
+
+              <li>
+                <a href="#" target="_blank">Facebook</a>
+              </li>
+
+              <li>
+                <a href="#" target="_blank">Instagram</a>
+              </li>
+            </ul>
+          </div>
+              
+          <div class="footer-copyrights">
+            <p>© 2020 All rights reserved. Jean Silva.</p>
+          </div>
+        </footer>
+        <!-- /Footer -->
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import MainMenu from './MainMenu.vue';
+
+import MainMenu from '../components/MainMenu.vue';
 
 export default {
-  name: 'Home',
+  name: 'Main',
   components: {
     MainMenu,
   }
 }
 </script>
+
+<style>
+  @import url('../assets/css/normalize.css');
+  @import url('../assets/css/bootstrap.min.css');
+  @import url('../assets/css/owl.carousel.css');
+  @import url('../assets/css/magnific-popup.css');
+  @import url('../assets/css/main.css');
+</style>

@@ -1,0 +1,80 @@
+{
+  "mainMenu": {
+    "item": {
+      "aboutMe": "About me",
+      "resume": "Resume",
+      "portifolio": "Portifolio",
+      "contact": "Contact me"
+    }
+  },
+  "aboutMe": {
+    "skills": {
+      "softwareEngineer": "Software Engineer",
+      "fullStackDeveloper": "Full Stack Developer"
+    },
+    "description": "A coool description goes here.",
+    "whatIdo": {
+      "label": "What I do",
+      "item": {
+        "softwareDevelopment": {
+          "title": "Software Development",
+          "description": "A coool description goes here.",
+          "icon": "linecons-display"
+        }
+      }
+    }
+  },
+  "resume": {
+    "label": "Resume",
+    "description": "8 years of experience",
+    "education": {
+      "label": "Education",
+      "item": {
+        "ifrn": {
+          "year": "2007 - 2010",
+          "title": "Federal Institute of Rio Grande do Norte",
+          "subtitle": "Computer Technician",
+          "description": "Copiar do meu resume que mandei pro Google."
+        },
+        "college": {
+          "year": "2011 - 2015",
+          "title": "Federal University of Rio Grande do Norte",
+          "subtitle": "Computer Science",
+          "description": "Cool description here."
+        },
+        "masters": {
+          "year": "2015 - 2017",
+          "title": "Federal University of Rio Grande do Norte",
+          "subtitle": "Computer Science Masters",
+          "description": "Cool description here."
+        }
+      }
+    },
+    "experience": {
+      "label": "Experience",
+      "item": {
+        "sinfo": {
+          "year": "2007 - 2010",
+          "title": "SINFO Federal University of Rio Grande do Norte",
+          "subtitle": "Intership Android Developer",
+          "description": "Copiar do meu resume que mandei pro Google."
+        },
+        "college": {
+          "year": "2011 - 2015",
+          "title": "Federal University of Rio Grande do Norte",
+          "subtitle": "Computer Science",
+          "description": "Cool description here."
+        },
+        "masters": {
+          "year": "2015 - 2017",
+          "title": "Federal University of Rio Grande do Norte",
+          "subtitle": "Computer Science Masters",
+          "description": "Cool description here."
+        }
+      }
+    }
+  },
+  "contact": {
+    "label": "Contact"
+  }
+}
