@@ -24,10 +24,10 @@
 
             <!-- Text Logo -->
             <div class="text-logo">
-              <a href="index.html">
+              <router-link to="/">
                 <div class="logo-symbol">J</div>
                 <div class="logo-text">Jean <span>Silva</span></div>
-              </a>
+              </router-link>
             </div>
             <!-- /Text Logo -->
 
@@ -53,21 +53,21 @@
           <div class="footer-social">
             <ul class="footer-social-links">
               <li>
-                <a href="#" target="_blank">Linkedin</a>
+                <a href="https://www.linkedin.com/in/jeanssilva" target="_blank">Linkedin</a>
               </li>
 
               <li>
-                <a href="#" target="_blank">Facebook</a>
+                <a href="https://www.facebook.com/jeangssilva" target="_blank">Facebook</a>
               </li>
 
               <li>
-                <a href="#" target="_blank">Instagram</a>
+                <a href="https://www.instagram.com/jeangsilva" target="_blank">Instagram</a>
               </li>
             </ul>
           </div>
               
           <div class="footer-copyrights">
-            <p>© 2020 All rights reserved. Jean Silva.</p>
+            <p>© {{ actualYear() }} All rights reserved. Jean Silva.</p>
           </div>
         </footer>
         <!-- /Footer -->
@@ -79,12 +79,17 @@
 <script>
 
 import MainMenu from '../components/MainMenu.vue';
-
+import moment from 'moment';
 export default {
   name: 'Main',
+  methods: {
+    actualYear() {
+      return moment().format('YYYY'); 
+    }
+  },
   components: {
-    MainMenu,
-  }
+    MainMenu
+  },
 }
 </script>
 

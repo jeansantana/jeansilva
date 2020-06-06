@@ -1,28 +1,31 @@
 import Vue from 'vue';
-import routes from './routes';
+// import routes from './routes';
 import i18n from './i18n';
+import Router from 'vue-router';
+
+import App from './App.vue';
+import Home from './pages/Home.vue';
+import Resume from './pages/Resume.vue';
+import Contact from './pages/Contact.vue';
+import Error from './pages/404.vue';
 
 Vue.config.productionTip = false;
 
-const app = new Vue({
-  el: '#app',
-  i18n,
-  data: {
-    currentRoute: window.location.pathname
-  },
-  computed: {
-    ViewComponent () {
-      const matchingView = routes[this.currentRoute];
-      return matchingView
-        ? require('./pages/' + matchingView + '.vue').default
-        : require('./pages/404.vue').default
-    }
-  },
-  render (h) {
-    return h(this.ViewComponent)
-  }
+Vue.use(Router);
+
+const router = new Router({
+  // mode: 'history',
+  routes: [
+    { path: '/', component: Home, name: 'home' },
+    { path: '/resume', component: Resume, name: 'resume' },
+    { path: '/contact', component: Contact, name: 'contact' },
+    { path: '*', component: Error, name: '404' },
+  ]
 });
 
-window.addEventListener('popstate', () => {
-  app.currentRoute = window.location.pathname
-})
+new Vue({
+  i18n,
+  router,
+  render: h => h(App),
+}).$mount('#app')
+

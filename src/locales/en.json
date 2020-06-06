@@ -5,76 +5,193 @@
       "resume": "Resume",
       "portifolio": "Portifolio",
       "contact": "Contact me"
-    }
+    },
+    "items": [{
+      "title": "About me",
+      "route": "/",
+      "visible": true
+    }, {
+      "title": "Resume",
+      "route": "/resume",
+      "visible": true
+    }, {
+      "title": "Portifolio",
+      "route": "/portifolio",
+      "visible": false
+    }, {
+      "title": "Contact me",
+      "route": "/contact",
+      "visible": true
+    }]
   },
   "aboutMe": {
-    "skills": {
-      "softwareEngineer": "Software Engineer",
-      "fullStackDeveloper": "Full Stack Developer"
-    },
-    "description": "A coool description goes here.",
+    "skills": [
+      { "description": "Software Engineer" },
+      { "description": "Full Stack Developer" },
+      { "description": "Mobile Developer" }
+    ],
+    "description": "A very skilled Software Engineer with a lot of experience in the software industry. I have been developing enterprise software for years, using the latest and most cutting-edge technologies, such as NodeJS, Angular, but also robust frameworks like Laravel (PHP) and profound technologies such as C++. My educational background helps me on a daily basis to solve the most challenging problems and algorithms, as I graduated and received my master’s degree in Computer Science at the Federal University of Rio Grande do Norte.",
     "whatIdo": {
       "label": "What I do",
-      "item": {
-        "softwareDevelopment": {
-          "title": "Software Development",
-          "description": "A coool description goes here.",
-          "icon": "linecons-display"
-        }
-      }
+      "items": [{
+        "title": "Software Development",
+        "description": "A coool description goes here.",
+        "icon": "linecons-display"
+      }]
+    },
+    "profile": {
+      "items": [{
+        "title": "Email",
+        "description": "info@jeansilva.com.br",
+        "icon": "linecons-mail"
+      }, {
+        "title": "Location",
+        "description": "Natal/RN, Brazil",
+        "icon": "linecons-location"
+      }, {
+        "title": "Languages",
+        "description": "Brazilian Portuguese, English",
+        "icon": "linecons-bubble"
+      }, {
+        "title": "Instagram",
+        "description": "@jeangsilva",
+        "icon": "fab fa-instagram",
+        "url": "https://www.instagram.com/jeangsilva"
+      }, {
+        "title": "LinkedIn",
+        "description": "jeanssilva",
+        "icon": "fab fa-linkedin",
+        "url": "https://www.linkedin.com/in/jeanssilva"
+      }, {
+        "title": "Facebook",
+        "description": "jeangssilva",
+        "icon": "fab fa-facebook-square",
+        "url": "https://www.facebook.com/jeangssilva"
+      }]
     }
   },
   "resume": {
     "label": "Resume",
-    "description": "8 years of experience",
+    "description": "years of experience",
     "education": {
       "label": "Education",
-      "item": {
-        "ifrn": {
-          "year": "2007 - 2010",
-          "title": "Federal Institute of Rio Grande do Norte",
-          "subtitle": "Computer Technician",
-          "description": "Copiar do meu resume que mandei pro Google."
-        },
-        "college": {
-          "year": "2011 - 2015",
-          "title": "Federal University of Rio Grande do Norte",
-          "subtitle": "Computer Science",
-          "description": "Cool description here."
-        },
-        "masters": {
-          "year": "2015 - 2017",
-          "title": "Federal University of Rio Grande do Norte",
-          "subtitle": "Computer Science Masters",
-          "description": "Cool description here."
-        }
-      }
+      "items": [{
+        "year": "2007 - 2010",
+        "subtitle": "Federal Institute of Education, Science and Technology of Rio Grande do Norte",
+        "title": "Computer Technician",
+        "description": ""
+      }, {
+        "year": "2011 - 2015",
+        "subtitle": "Federal University of Rio Grande do Norte",
+        "title": "Bachelor of Computer Science",
+        "description": "I was a member of the Tutorial Education Program for Computer Science Course (PET-CC) and developed teaching, research, and extension activities. I was also a volunteer in a Scientific project to develop a teaching tool based on a game, and it was turned into my end of course paper."
+      }, {
+        "year": "2015 - 2017",
+        "subtitle": "Federal University of Rio Grande do Norte",
+        "title": "Master's Degree in Computer Systems",
+        "description": "Master in Systems and Computing with a focus on experimental algorithms and optimization. I worked on a problem called The Traveling Salesman Problem with Rideshare and Quota, inspired by the well-known Traveling Salesman Problem."
+      }]
     },
     "experience": {
       "label": "Experience",
-      "item": {
-        "sinfo": {
-          "year": "2007 - 2010",
-          "title": "SINFO Federal University of Rio Grande do Norte",
-          "subtitle": "Intership Android Developer",
-          "description": "Copiar do meu resume que mandei pro Google."
-        },
-        "college": {
-          "year": "2011 - 2015",
-          "title": "Federal University of Rio Grande do Norte",
-          "subtitle": "Computer Science",
-          "description": "Cool description here."
-        },
-        "masters": {
-          "year": "2015 - 2017",
-          "title": "Federal University of Rio Grande do Norte",
-          "subtitle": "Computer Science Masters",
-          "description": "Cool description here."
-        }
+      "items": [{
+        "year": "Dec 2014 – Aug 2015",
+        "title": "Android Developer",
+        "subtitle": "Federal University of Rio Grande do Norte Informatics Superintendence (Intership)",
+        "description": "Worked as a mobile developer on the Integrated Academic Activity Management System (aka SIGAA) mobile version.",
+        "url": ""
+      }, {
+        "year": "2015 - 2016",
+        "title": "Full Stack Developer",
+        "subtitle": "Freelancer",
+        "description": "Developing my skills as a mobile developer. I’ve worked mainly with Android and Windows Phone as freelancer. I’ve also worked with web development designing and developing CMS’s for business.",
+        "url": ""
+      }, {
+        "year": "Dec 2016 - May 2017",
+        "title": "Software Engineer",
+        "subtitle": "Synco",
+        "description": "Designed and developed the synco app and backend services. I’ve worked on the very beginning of this project to accomplish the product time to market."
+      }, {
+        "year": "Jun 2017 - Present",
+        "title": "Software Engineer",
+        "subtitle": "Cloud Plus Plus",
+        "description": "I work as lead developer of the mobile sales CRM. Also work as developer on several Cloud Plus Plus projects, using technologies like Laravel, AngularJs, Angular, Vue.js and Node.js."
+      }]
+    },
+    "skills": {
+      "label": "Coding Skills",
+      "items": {
+        "col1": [{
+          "title": "HTML/CSS",
+          "percentage": "100"
+        }, {
+          "title": "LaTeX",
+          "percentage": "100"
+        }, {
+          "title": "SQL",
+          "percentage": "100"
+        }, {
+          "title": "Javascript/Typescript",
+          "percentage": "100"
+        }, {
+          "title": "Java",
+          "percentage": "100"
+        }, {
+          "title": "C/C++",
+          "percentage": "100"
+        }, {
+          "title": "PHP",
+          "percentage": "70"
+        }, {
+          "title": "Python",
+          "percentage": "70"
+        }, {
+          "title": "C#",
+          "percentage": "65"
+        }],
+        "col2": [{
+          "title": "Node.js",
+          "percentage": "80"
+        }, {
+          "title": "AngularJS/Angular",
+          "percentage": "100"
+        }, {
+          "title": "Vue.js",
+          "percentage": "100"
+        }, {
+          "title": "Laravel",
+          "percentage": "100"
+        }, {
+          "title": "Sails.js",
+          "percentage": "65"
+        }, {
+          "title": "Express",
+          "percentage": "65"
+        }, {
+          "title": "NestJS",
+          "percentage": "100"
+        }, {
+          "title": "ionic",
+          "percentage": "100"
+        }, {
+          "title": "Android Native",
+          "percentage": "100"
+        }]
       }
     }
   },
   "contact": {
-    "label": "Contact"
+    "label": "Contact",
+    "getInTouch": "Get In Touch",
+    "location": "Natal, Rio Grande do Norte, Brazil",
+    "form": {
+      "label": "How can I help you?",
+      "fullname": "Full Name",
+      "email": "Email Address",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send message"
+    }
+
   }
 }

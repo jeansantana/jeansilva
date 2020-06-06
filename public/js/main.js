@@ -189,7 +189,7 @@
     //     .on('load', function() { //Load
     //         // Animation on Page Loading
     //         $(".preloader").fadeOut( 800, "linear" );
-    //         // animateLayout();
+    //         animateLayout();
     //     })
     //     .on('hashchange', function(event) {
     //         if(location.hash) {
@@ -250,10 +250,10 @@
         });
 
         // Mobile menu
-        $('.menu-toggle').on("click", function () {
-            $('.site-nav').addClass('animate');
-            $('.site-nav').toggleClass('mobile-menu-hide');
-        });
+        // $('.menu-toggle').on("click", function () {
+        //     $('.site-nav').addClass('animate');
+        //     $('.site-nav').toggleClass('mobile-menu-hide');
+        // });
 
         // Text rotation
         $('.text-rotation').owlCarousel({

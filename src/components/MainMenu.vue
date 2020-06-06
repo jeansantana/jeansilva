@@ -3,9 +3,9 @@
     <div class="site-nav mobile-menu-hide">
       <ul class="leven-classic-menu site-main-menu">
         <li class="menu-item" v-bind:class="{ 'current-menu-item': isActive(item.route) }" v-for="item in menuItems" :key="item.route">
-          <v-link v-bind:href="item.route">
+          <router-link :to="item.route">
             {{ item.title }}
-          </v-link>
+          </router-link>
         </li>
       </ul>
     </div>
@@ -18,37 +18,25 @@
 </template>
 
 <script>
-  import VLink from './VLink';
-
   export default {
     name: 'MainMenu',
 
     data() {
       return {
-        menuItems: [{
-          title: this.$t('mainMenu.item.aboutMe'),
-          route: '/',
-        }, {
-          title: this.$t('mainMenu.item.resume'),
-          route: '/resume',
-        }, {
-          title: this.$t('mainMenu.item.portifolio'),
-          route: '/portifolio',
-        }, {
-          title: this.$t('mainMenu.item.contact'),
-          route: '/contact',
-        }],
+        menuItems: this.$t('mainMenu.items').filter((menuItem) => menuItem.visible),
       }
     },
 
     methods: {
       isActive (route) {
-        return route === this.$root.currentRoute;
+        if (this.$router.currentRoute) {
+          return route === this.$router.currentRoute.fullPath;
+        }
+
+        return false;
       }
     },
 
-    components: {
-      VLink,
-    }
+    components: { }
   }
 </script>
