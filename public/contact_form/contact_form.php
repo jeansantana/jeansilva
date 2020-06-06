@@ -1,7 +1,7 @@
 <?php
 
 // configure
-$from = 'info@jeansilva.com.br'; // Replace it with Your Hosting Admin email. REQUIRED!
+$from = 'no-reply@jeansilva.com.br'; // Replace it with Your Hosting Admin email. REQUIRED!
 $sendTo = 'info@jeansilva.com.br'; // Replace it with Your email. REQUIRED!
 $subject = 'New message from contact form';
 $fields = array('name' => 'Name', 'email' => 'Email', 'subject' => 'Subject', 'message' => 'Message'); // array variable name => Text to appear in the email. If you added or deleted a field in the contact form, edit this array.
@@ -37,6 +37,7 @@ if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'
                 'From: ' . $from,
                 'Reply-To: ' . $from,
                 'Return-Path: ' . $from,
+                'Location: jeansilva.com.br/#/contact'
             );
             
             mail($sendTo, $subject, $emailText, implode("\n", $headers));

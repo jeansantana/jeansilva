@@ -6,6 +6,7 @@ export default {
     this.animateMobileMenuToggle();
     this.setSkillsStyle();
   },
+  
   setSkillsStyle() {
     var custom_styles = "";
     $( '.skill-container' ).each( function() {
@@ -31,5 +32,30 @@ export default {
       $('.site-nav').toggleClass('mobile-menu-hide');
     });
   },
+
+  setupContactForm() {
+    $('#contact_form').on('submit', (e) => {
+      if (!e.isDefaultPrevented()) {
+        var url = "contact_form/contact_form.php";
+
+        $.ajax({
+          type: "POST",
+          url: url,
+          data: $(this).serialize(),
+          success: (data) => {
+            var messageAlert = 'alert-' + data.type;
+            var messageText = data.message;
+
+            var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
+            if (messageAlert && messageText) {
+                $('#contact_form').find('.messages').html(alertBox);
+                $('#contact_form')[0].reset();
+            }
+          }
+        });
+        return false;
+      }
+    });
+  }
 
 }
