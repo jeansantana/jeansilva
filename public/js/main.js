@@ -70,7 +70,7 @@
                 return false;
             });
     }
-    
+
     // Portfolio subpage filters
     function portfolio_init() {
         $( '.portfolio-content' ).each( function() {

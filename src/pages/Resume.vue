@@ -18,7 +18,7 @@
             <div class="timeline-item clearfix" v-for="(item, index) in education" :key="`edu-${index}`">
               <h5 class="item-period ">{{ item.year }}</h5>
               <span class="item-company">{{ item.title }}</span>
-              <h4 class="item-title">{{ item.subtitle }}</h4>
+              <h4 class="item-title"><a class="company-link" :href="item.url" target="_blank">{{ item.subtitle }}</a></h4>
               <p>{{ item.description }}</p>
             </div>
 
@@ -34,7 +34,7 @@
             <div class="timeline-item clearfix" v-for="(item, index) in experience" :key="`exp-${index}`">
               <h5 class="item-period ">{{ item.year }}</h5>
               <span class="item-company">{{ item.title }}</span>
-              <h4 class="item-title">{{ item.subtitle }}</h4>
+              <h4 class="item-title"><a class="company-link" :href="item.url" target="_blank">{{ item.subtitle }}</a></h4>
               <p>{{ item.description }}</p>
             </div>
           </div>
@@ -85,6 +85,12 @@
     </div>
   </main-layout>
 </template>
+
+<style>
+  a.company-link {
+    color: black;
+  }
+</style>
 
 <script>
   import moment from 'moment';

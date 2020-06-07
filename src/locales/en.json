@@ -99,7 +99,7 @@
         "title": "Android Developer",
         "subtitle": "Federal University of Rio Grande do Norte Informatics Superintendence (Intership)",
         "description": "Worked as a mobile developer on the Integrated Academic Activity Management System (aka SIGAA) mobile version.",
-        "url": ""
+        "url": "https://info.ufrn.br"
       }, {
         "year": "2015 - 2016",
         "title": "Full Stack Developer",
@@ -110,12 +110,14 @@
         "year": "Dec 2016 - May 2017",
         "title": "Software Engineer",
         "subtitle": "Synco",
-        "description": "Designed and developed the synco app and backend services. I’ve worked on the very beginning of this project to accomplish the product time to market."
+        "description": "Designed and developed the synco app and backend services. I’ve worked on the very beginning of this project to accomplish the product time to market.",
+        "url": "https://www.synco.co"
       }, {
         "year": "Jun 2017 - Present",
         "title": "Software Engineer",
         "subtitle": "Cloud Plus Plus",
-        "description": "I work as lead developer of the mobile sales CRM. Also work as developer on several Cloud Plus Plus projects, using technologies like Laravel, AngularJs, Angular, Vue.js and Node.js."
+        "description": "I work as lead developer of the mobile sales CRM. Also work as developer on several Cloud Plus Plus projects, using technologies like Laravel, AngularJs, Angular, Vue.js and Node.js.",
+        "url": "https://cloudplusplus.nl"
       }]
     },
     "skills": {
@@ -141,7 +143,7 @@
           "percentage": "100"
         }, {
           "title": "PHP",
-          "percentage": "70"
+          "percentage": "85"
         }, {
           "title": "Python",
           "percentage": "70"
@@ -190,8 +192,16 @@
       "email": "Email Address",
       "subject": "Subject",
       "message": "Message",
-      "send": "Send message"
-    }
-
+      "send": "Send message",
+      "errors": {
+        "name": "Full name is required",
+        "email": "email is required and must be a valid email",
+        "subject": "Subject is required",
+        "message": "Message is required",
+        "recaptcha": "Please click on the reCAPTCHA box."
+      }
+    },
+    "successMessage": "Contact form successfully submitted. Thank you, I will get back to you soon!",
+    "unexpectedError": "Unknown error! If it persists, please, send me an email using your email client. I'll get back soon."
   }
 }
