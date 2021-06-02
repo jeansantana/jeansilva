@@ -1,40 +1,40 @@
 {
   "mainMenu": {
     "item": {
-      "aboutMe": "About me",
-      "resume": "Resume",
-      "portfolio": "Portfolio",
-      "contact": "Contact me"
+      "aboutMe": "Um pouco sobre mim",
+      "resume": "Currículo",
+      "portfolio": "Portfólio",
+      "contact": "Entre em contato"
     },
     "items": [{
-      "title": "About me",
+      "title": "Sobre",
       "route": "/",
       "visible": true
     }, {
-      "title": "Resume",
+      "title": "Currículo",
       "route": "/resume",
       "visible": true
     }, {
-      "title": "Portfolio",
+      "title": "Portfólio",
       "route": "/portfolio",
       "visible": false
     }, {
-      "title": "Contact me",
+      "title": "Entre em contato",
       "route": "/contact",
       "visible": true
     }]
   },
   "aboutMe": {
     "skills": [
-      { "description": "Software Engineer" },
-      { "description": "Full Stack Developer" },
-      { "description": "Mobile Developer" }
+      { "description": "Engenheiro de Software" },
+      { "description": "Desenvolvedor Full Stack" },
+      { "description": "Desenvolvedor de dispositivos móveis" }
     ],
     "description": "A very skilled Software Engineer with a lot of experience in the software industry. I have been developing enterprise software for years, using the latest and most cutting-edge technologies, such as NodeJS, Angular, but also robust frameworks like Laravel (PHP) and profound technologies such as C++. My educational background helps me on a daily basis to solve the most challenging problems and algorithms, as I graduated and received my master’s degree in Computer Science at the Federal University of Rio Grande do Norte.",
     "whatIdo": {
-      "label": "What I do",
+      "label": "O que eu faço",
       "items": [{
-        "title": "Software Development",
+        "title": "Desenvolvedor de Software",
         "description": "A coool description goes here.",
         "icon": "linecons-display"
       }]
@@ -45,12 +45,12 @@
         "description": "info@jeansilva.com.br",
         "icon": "linecons-mail"
       }, {
-        "title": "Location",
-        "description": "Natal/RN, Brazil",
+        "title": "Localização",
+        "description": "Natal/RN, Brasil",
         "icon": "linecons-location"
       }, {
-        "title": "Languages",
-        "description": "Brazilian Portuguese, English",
+        "title": "Línguas",
+        "description": "Português Brasileiro, Inglês",
         "icon": "linecons-bubble"
       }, {
         "title": "Instagram",
@@ -71,23 +71,23 @@
     }
   },
   "resume": {
-    "label": "Resume",
-    "description": "years of experience",
+    "label": "Currículo",
+    "description": "ano de experiência",
     "education": {
-      "label": "Education",
+      "label": "Educação",
       "items": [{
         "year": "2007 - 2010",
-        "subtitle": "Federal Institute of Education, Science and Technology of Rio Grande do Norte",
-        "title": "Computer Technician",
+        "subtitle": "Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte",
+        "title": "Técnico em Informática",
         "description": ""
       }, {
         "year": "2011 - 2015",
-        "subtitle": "Federal University of Rio Grande do Norte",
-        "title": "Bachelor of Computer Science",
+        "subtitle": "Universidade Federal do Rio Grande do Norte",
+        "title": "Bacharelado em Ciência da Computação",
         "description": "I was a member of the Tutorial Education Program for Computer Science Course (PET-CC) and developed teaching, research, and extension activities. I was also a volunteer in a Scientific project to develop a teaching tool based on a game, and it was turned into my end of course paper."
       }, {
         "year": "2015 - 2017",
-        "subtitle": "Federal University of Rio Grande do Norte",
+        "subtitle": "Universidade Federal do Rio Grande do Norte",
         "title": "Master's Degree in Computer Systems",
         "description": "Master in Systems and Computing with a focus on experimental algorithms and optimization. I worked on a problem called The Traveling Salesman Problem with Rideshare and Quota, inspired by the well-known Traveling Salesman Problem."
       }]

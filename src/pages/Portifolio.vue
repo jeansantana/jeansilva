@@ -1,6 +1,6 @@
 <template>
   <main-layout>
-    <p>Portifolio</p>
+    <p>Portfolio</p>
   </main-layout>
 </template>
 

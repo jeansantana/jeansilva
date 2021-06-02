@@ -49,36 +49,25 @@
         </div>
         <div class=" col-xs-12 col-sm-6 ">
           <!-- Skill col 1 -->
-          <div id="skilllist1" class="skills-info skills-first-style">
-            <span v-for="(skill, index) in skills.col1" :key="`skillcol1-${index}`">
-              <div class="clearfix">
-                <h4>{{ skill.title }}</h4>
-                <div class="skill-value">{{ skill.percentage }}%</div>
-              </div>
-
-              <div :id="`skillcol1-${index}`" :data-value="skill.percentage" class="skill-container">
-                <div class="skill-percentage"></div>
-              </div>
-            </span>
+          <div>
+            <ul>
+              <li v-for="(skill, index) in skills.col1" :key="`skillcol1-${index}`">
+                {{ skill.title }}
+              </li>
+            </ul>
           </div>
           <!-- Skill col 1 -->
         </div>
-
         <div class=" col-xs-12 col-sm-6 ">
-          <!-- Skill col 2 -->
-          <div id="skilllist2" class="skills-info skills-first-style">
-            <span v-for="(skill, index) in skills.col2" :key="`skillcol2-${index}`">
-              <div class="clearfix">
-                <h4>{{ skill.title }}</h4>
-                <div class="skill-value">{{ skill.percentage }}%</div>
-              </div>
-
-              <div :id="`skillcol2-${index}`" :data-value="skill.percentage" class="skill-container">
-                <div class="skill-percentage"></div>
-              </div>
-            </span>
+          <!-- Skill col 1 -->
+          <div>
+            <ul>
+              <li v-for="(skill, index) in skills.col2" :key="`skillcol2-${index}`">
+                {{ skill.title }}
+              </li>
+            </ul>
           </div>
-          <!-- Skill col 2 -->
+          <!-- Skill col 1 -->
         </div>
       </div>
       <!-- skils -->
