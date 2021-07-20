@@ -46,7 +46,7 @@
         "icon": "linecons-mail"
       }, {
         "title": "Location",
-        "description": "Natal/RN, Brazil",
+        "description": "Sherbrooke, QC, Canada",
         "icon": "linecons-location"
       }, {
         "title": "Languages",
@@ -188,7 +188,7 @@
   "contact": {
     "label": "Contact",
     "getInTouch": "Get In Touch",
-    "location": "Natal, Rio Grande do Norte, Brazil",
+    "location": "Sherbrooke, QC, Canada",
     "form": {
       "label": "How can I help you?",
       "fullname": "Full Name",

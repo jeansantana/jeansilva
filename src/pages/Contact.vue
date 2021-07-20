@@ -11,16 +11,6 @@
       <div class="row">
         <div class=" col-xs-12 col-sm-4 ">
           <div id="info_list_1" class="info-list-w-icon">
-
-            <div class="info-block-w-icon">
-              <div class="ci-icon">
-                <i class="linecons linecons-phone"></i>
-              </div>
-              <div class="ci-text">
-                <h4>+55 84 998187108</h4>
-              </div>
-            </div>
-
             <div class="info-block-w-icon">
               <div class="ci-icon">
                 <i class="linecons linecons-location"></i>
