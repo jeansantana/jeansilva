@@ -21,7 +21,7 @@
     }, {
       "title": "Contact me",
       "route": "/contact",
-      "visible": true
+      "visible": false
     }]
   },
   "aboutMe": {
@@ -42,7 +42,7 @@
     "profile": {
       "items": [{
         "title": "Email",
-        "description": "info@jeansilva.com.br",
+        "description": "jeangleison2@gmail.com",
         "icon": "linecons-mail"
       }, {
         "title": "Location",
@@ -50,7 +50,7 @@
         "icon": "linecons-location"
       }, {
         "title": "Languages",
-        "description": "Brazilian Portuguese, English",
+        "description": "Brazilian Portuguese, English, French",
         "icon": "linecons-bubble"
       }, {
         "title": "Instagram",
