@@ -1,5 +1,5 @@
 module.exports = {
-  publicPath: '/jeansantana/',
+  publicPath: '/jeansilva/',
   pluginOptions: {
     i18n: {
       locale: 'en',
