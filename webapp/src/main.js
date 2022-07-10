@@ -6,7 +6,6 @@ import Router from 'vue-router';
 import App from './App.vue';
 import Home from './pages/Home.vue';
 import Resume from './pages/Resume.vue';
-import Contact from './pages/Contact.vue';
 import Error from './pages/404.vue';
 
 Vue.config.productionTip = false;
@@ -18,7 +17,6 @@ const router = new Router({
   routes: [
     { path: '/', component: Home, name: 'home' },
     { path: '/resume', component: Resume, name: 'resume' },
-    { path: '/contact', component: Contact, name: 'contact' },
     { path: '*', component: Error, name: '404' },
   ]
 });
